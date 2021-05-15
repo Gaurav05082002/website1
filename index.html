@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mainheader {
+            height: 20%;
+        }
+
+        .centre {
+            position: fixed;
+        }
+
+        #web1body {
+            margin: 0px;
+            padding: 0px;
+            background-size: cover;
+            width: 100%;
+            height: 120vh;
+            background-repeat: no-repeat;
+            background-image: url("realbackbllur.jpg");
+        }
+
+        .navbar li {
+            list-style: none;
+            float: left;
+            padding: 3px 3px;
+            margin-top: 20px;
+            color: white;
+
+            display: block;
+            border: black;
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .centre li {
+            float: right;
+            list-style: none;
+            padding: 3px 3px;
+            margin-top: 45px;
+            color: white;
+
+            display: block;
+            border: black;
+            background-color: black;
+            border-radius: 30px;
+        }
+
+
+
+        .centre li a {
+            text-decoration: none;
+            padding: 3px 20px;
+            margin-top: 5px;
+            color: white;
+            text size: 20%;
+        }
+
+        .centre li a :hover {
+            text-decoration: underline;
+
+
+            color: white;
+
+        }
+
+        .centre li :hover {
+            background-color: rgb(3, 3, 95);
+            border-radius: 30px;
+        }
+
+        .centre li:focus {
+            background-color: rgb(3, 3, 95);
+            border-radius: 30px;
+        }
+
+
+        li {
+            display: block;
+            height: 20%;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .left {
+            float: left;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .left img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        .centre {
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+
+        #name {
+            color: black;
+            text-align: center;
+            background-image: url(cover-image.png);
+        }
+
+        .page {
+            width: 48%;
+            display: block;
+            float: left;
+        }
+
+        #box1 {
+            display: block;
+            /*border: 2px solid red;*/
+            margin-left: 15px;
+            box-sizing: border-box;
+            /*padding-top: 48px;*/
+            padding-left: 145px;
+        }
+
+        #box2 {
+            /*border: 2px solid yellow;*/
+            margin-left: 15px;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        #heading {
+            font-size: 48px;
+            color: white;
+            display: block;
+        }
+
+        #food {
+            color: white;
+            font-size: 20px;
+        }
+
+        #heading :hover {
+            color: goldenrod;
+
+        }
+
+        #food :hover {
+            color: red;
+            background-color: rgba(146, 127, 126, 0.5);
+            font-weight: bolder;
+        }
+
+        #box2head {
+            color: #0631a7;
+            background-color: rgba(146, 127, 126, 0.5);
+        }
+
+        #form {
+            font-size: 20px;
+            margin: 0px, 0px;
+            padding-top: 0px;
+            display: block;
+
+        }
+
+        .search {
+            border-radius: 100px;
+            background: rgba(235, 198, 196, 0.3);
+            height: 30px;
+            width: 46%;
+            padding: 0px;
+        }
+
+        .submit {
+            background-image: url(icon.jpg);
+            width: 40px;
+            height: 40px;
+            margin-top: -7px;
+            margin-bottom: -15px;
+            padding: 0px;
+            border-radius: 100px;
+        }
+
+        .variety {
+            font-size: 30px;
+            color: white;
+            background-color: rgba(146, 127, 126, 0.5);
+        }
+
+        #veg:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #nonveg:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #d:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #j:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #f:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        .form2 {
+            font-size: 20px;
+            border-radius: 100px;
+            background: rgba(235, 198, 196, 0.3);
+            height: 30px;
+            width: 46%;
+            padding: 0px;
+        }
+
+        #n1:hover {
+            color: rgb(255, 186, 10);
+            font-weight: bold;
+        }
+
+        #n2:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #n3:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #n4:hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+        #b {
+            color: #0631a7;
+            background-color: rgba(146, 127, 126, 0.5);
+            font-weight: bolder;
+        }
+
+        .n {
+            font-weight: bolder;
+        }
+
+        .form2 :hover {
+            color: rgb(245, 178, 8);
+            font-weight: bold;
+        }
+
+
+        /*............................................WEB2 PAGE.........................................*/
+
+        #hd {
+            color: red;
+
+            margin-left: 494px;
+            margin-right: 400px;
+            margin-bottom: 8px;
+            font-weight: bolder;
+            font-size: 50px;
+
+
+        }
+
+        #web2 {
+            margin-top: -8px;
+            margin: 0px;
+            padding: 1px;
+            padding-left: 1px;
+            padding-right: 1px;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-image: url("back blur2.jpg");
+        }
+
+        #boxa {
+            display: block;
+            border: 2px solid red;
+            /* margin-left: 15px;*/
+            /*box-sizing: border-box;*/
+            /*padding-top: 48px;*/
+            /*padding-left: 145px;*/
+            border-radius: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 30px;
+            padding-right: 20px;
+            font-size: 20px;
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgba(146, 127, 126, 0.3);
+            ;
+        }
+
+        #boxa:hover {
+            background-color: rgba(146, 127, 126, 0.5);
+            font-weight: bold;
+        }
+
+        .bo {
+            /*border: 2px solid blue;*/
+            width: 23%;
+            float: left;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            background-color: rgba(146, 127, 126, 0.5);
+        }
+
+        .bo:hover {
+            border: 2px solid blue;
+        }
+
+        #boxb {
+            margin-left: 20px;
+            background-color: rgba(146, 127, 126, 0.5);
+        }
+
+        .boim {
+            width: 100%;
+            height: 60%;
+        }
+
+        .naan {
+            margin-top: 0px;
+            font-size: 20px;
+            color: blanchedalmond;
+            margin-bottom: 0px;
+        }
+
+        .item {
+            margin-top: 0px;
+            font-size: 21px;
+            margin-bottom: 1px;
+        }
+
+        .naan:hover {
+            font-weight: bolder;
+        }
+
+        .item2 {
+            float: left;
+            font-size: 25px;
+            font-weight: bold;
+            /*background-color: rgba(255, 235, 205, 0.5);*/
+            display: inline;
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+
+        .subw {
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 16px;
+            background-color: rgba(255, 235, 205, 0.1);
+            height: 30px;
+            width: 16%;
+            padding: 0px;
+            float: right;
+            margin: 0;
+            padding-right: 0px;
+            display: block;
+        }
+
+        .subw:focus {
+            background-color: rgb(113, 238, 113);
+        }
+
+
+
+
+        /*..................................WEBPAGE3DESIGN.,,,,,,,,*/
+        #web3 {
+            margin-top: -8px;
+            margin: 0px;
+            padding: 1px;
+            padding-left: 1px;
+            padding-right: 1px;
+            background-size: cover;
+            width: 100%;
+            height: 120vh;
+            background-repeat: no-repeat;
+            background-image: url("back blur2.jpg");
+        }
+
+        #boxf {
+            display: block;
+            /*border: 2px solid red;*/
+            /* margin-left: 15px;*/
+            /*box-sizing: border-box;*/
+            /*padding-top: 48px;*/
+            /*padding-left: 145px;*/
+            border-radius: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 30px;
+            padding-right: 20px;
+            font-size: 20px;
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*background-color: rgba(146, 127, 126, 0.3);*/
+            /* margin-bottom: 0px */
+            ;
+        }
+
+        #boxf:hover {
+            /*background-color: rgba(146, 127, 126, 0.5);*/
+            font-weight: bold;
+        }
+
+
+        /*...........................web page 4 design ,...........*/
+
+
+
+        #header4 {
+            color: rgb(255, 102, 0);
+            font-size: 40px;
+            display: block;
+            padding-left: 45%;
+            padding-right: 45%;
+            margin-top: 0px;
+        }
+
+        #we4 {
+            background-size: cover;
+            width: 100%;
+            height: 195vh;
+            background-repeat: no-repeat;
+            background-image: url("tableblur.jpg");
+            margin-top: 40px;
+        }
+
+        #b4a {
+            border: 2px solid red;
+            background-color: rgba(146, 127, 126, 0.5);
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            padding-top: 40px;
+            color: rgb(255, 183, 0);
+        }
+
+        #b4a:hover {
+            font-weight: bold;
+            color: white;
+        }
+
+        #b4b {
+            width: 55%;
+            border-radius: 20px;
+            background-color: rgba(146, 127, 126, 0.5);
+             border: 2px solid red; 
+            margin-left: 10px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+
+        #b4c {
+            width: 43%;
+            background-color: rgba(146, 127, 126, 0.5);
+            border: 2px solid blue;
+            float: right;
+            margin-top: 0px;
+            border-radius: 20px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            padding-top: 10px;
+            padding-left: 15px;
+
+        }
+
+        .tit4 {color:wheat;
+        background-color:rgba(146, 127, 126, 0.7); ;}
+        .tit4:hover {font-weight: bold;
+        color: gold;}
+
+        .profimg {width: 90%;
+        }
+         
+         .prof {width: 25%;
+             float: left;
+             /* border: 2px solid red ; */
+         }
+         .plus {width: 70%;
+         float: left;
+         /* border: 2px solid blue ; */
+         font-size: 20px;
+         padding: 10px;
+         margin-left: 10px;
+         border-radius: 20px;
+         margin-bottom: 10px;
+         background-color: rgba(211, 196, 195, 0.5);
+         }
+
+         .plus:hover {background-color:rgba(146, 127, 126, 0.7);
+         color: white;}
+
+         .profimg:hover { border-color: blue;border-style: groove;}
+         
+/* ..............form style........... */
+
+         .f4 {font-size: 20px;
+         color: whitesmoke;}
+          
+         .f5 {width: 90%;
+            background-color: rgba(146, 127, 126, 0.1);
+            border-radius: 20px;
+            border-color: white;
+            border-style: groove;} 
+/* ..............footer............. */
+          .fobox {border: 2px solid ; border-color: tomato;
+          font-size: 20px;
+          margin-top: 20px;
+          padding-left: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          background-color: rgba(146, 127, 126, 0.6);
+          border-radius: 20px;}
+
+          .fobox :hover{ font-weight: bold;
+          color: white;}
+          
+
+          .con {font-size: 25px;
+          color: white;}
+
+          .sm {width: 18%;
+          float: left;
+          margin: 10px;
+          /* border:  2px solid blue ; */
+          }
+
+          .smi {width: 70%;}
+
+          .btnn { background-color:rgba(146, 127, 126, 0.0);
+          }
+
+          .btnn :hover { background-color:rgba(146, 127, 126, 0.5);
+          }
+          
+    </style>
+</head>
+
+<body>
+    <a name="xyz"></a>
+    <div id="web1body">
+        <header id="mainheader">
+            <div class="left"><img src="profile-pic (2).png" alt="">
+                <div id="name"><b>MAJESTIC FOOD </b></div>
+            </div>
+            <div class="centre">
+                <!-- <nav class="navbar"> -->
+                <ul>
+                    <li><a href="#footer"><b>FOOTER</b></a> </li>
+                    <li><a href="#review"><b>REVIEWS</b></a> </li>
+                    <li><a href="#rec"><b>RECOMMENDATION</b></a> </li>
+                    <li><a href="#special"><b>SPECIAL</b></a> </li>
+                    <li><a href="#xyz"><b>HOME</b></a> </li>
+                </ul>
+                <!-- </nav> -->
+            </div>
+            <!-- <div class="right">this is right </div> -->
+        </header>
+        <div id="box1" class="page"><img id="image1" src="profile-pic (2).png" width="400px">
+            <h1 id="heading"><b>THE MAGESTIC<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOODS </b>
+            </h1>
+            <p id="food"><b>The hygenic food with the best taste. <br>
+                    From the breakfast to dinner we care about your health,<br>your taste and your timings</b></p>
+        </div>
+        <div id="box2" class="page">
+            <h1 id="box2head">Eat Food , Serve love ....</h1>
+            <form action="backend.php">
+                <div id="form"><b>Search</b> <input type="text" name="search" class="search" id="search">
+                    <input type="submit" value="" class="submit" id="submit"><br><br><br>
+                    <div class="variety"><input type="button" value="SEE SPECIALISATION" class="form2"></div>
+                    <br>
+                    <div id="veg" class="variety">Vegeterian foods</div>
+                    <div id="nonveg" class="variety">Non-vegeterian foods</div>
+                    <div id="d" class="variety">Deserts and icecreams</div>
+                    <div id="j" class="variety">Drinks and juices</div>
+                    <div id="f" class="variety">Fast foods</div>
+                    <br>
+                    <div id="b">BOOK YOUR TABLE NOW !</div>
+                    <br>
+                    <div>
+                        <div class="n" id="n1">
+                            VISITING DATE: <input type="date" name="mydob" class="form2">
+                            <br>
+                        </div>
+                        <div class="n" id="n2">
+                            <br>
+                            VISITING TIME: <input type="time" name="mydob" class="form2">
+                            <br>
+                        </div>
+                        <div class="n" id="n3">
+                            <br>
+                            EMAIL ADDRESS: <input type="email" name="myemail" class="form2">
+                            <br>
+                        </div>
+                        <div class="n" id="n4">
+                            <br>
+                            <input type="button" value="submit" class="form2">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- ..........................................................web2body................................................................... -->
+
+    <a name="special"></a>
+    <div id="web2">
+
+        <h1 id="hd">MAGESTIC'S SPECIAL</h1>
+        <div id="boxa" class="">‘We are what we eat’ is an old phrase, but even today it stands true and the very prove
+            of this phrase can be witnessed from the behaviour of people eating particular variety of food. If you take
+            a broader look, you will find in states across India different regions have different varieties of food. Our
+            aim is, people from every states of India be happy with its varieties of delicious food dishes from there
+            states and outer states.
+            <!-- src="profile-pic (2).png" width="400px"> -->
+
+        </div>
+        <br>
+        <div id="boxb" class="bo">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="roti.jpg" alt="" class="boim">
+            <p class="item"><b>Naan</b>&nbsp;{veg}
+            <p>
+            <p class="naan">Naan is a leavened flatbread mostly cooked in a tandoor (clay oven). It is one of the most
+                ordered flatbreads our restaurant</p>
+            <p class="item2">Rs 20/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw"></p>
+        </div>
+        <div id="boxc" class="bo">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="sabji.jpg" alt="" class="boim">
+            <p class="item"><b>Paneer tikka</b>&nbsp;{veg}
+            <p>
+            <p class="naan">Paneer Tikka is popular Indian appetizer made with cubes of paneer & veggies marinated with
+                yogurt and spices.this is mostlly eaten with naan</p>
+            <p class="item2">Rs 80/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw"></p>
+        </div>
+        <div id="boxd" class="bo">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="gulabjamun.jpg" alt="" class="boim">
+            <p class="item"><b>Gulab jamun</b>&nbsp;{veg}
+            <p>
+            <p class="naan">Gulab jamuns is most popular dessert. This delicious treat consists of soft,
+                melt-in-your-mouth, fried dumpling made milk and soaked in a chasni</p>
+            <p class="item2">Rs 60/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw"></p>
+        </div>
+        <div id="boxe" class="bo">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="icecream.jpg" alt="" class="boim">
+            <p class="item"><b>Choclate icecream</b>&nbsp;{veg}
+            <p>
+            <p class="naan">Chocolate ice cream is made by blending in cocoa powder in along with the eggs (optional),
+                cream, vanilla and sugar used to make ice cream.</p>
+            <p class="item2">Rs 40/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw"></p>
+        </div>
+    </div>
+
+
+    <!-- ..........................recommendation page 3............... -->
+
+    <a name="rec"></a>
+    <div id="web3">
+        <h1 id="hd">RECOMMENDATIONS</h1>
+        <div id="boxf" class="">
+            <div id="form"><b>Search</b> <input type="text" name="search" class="search" id="search">
+                <input type="submit" value="" class="submit" id="submit">
+                <!-- src="profile-pic (2).png" width="400px"> -->
+
+            </div>
+            <br>
+            <div id="boxb" class="bo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="sambhar dosa.jpg" alt="" class="boim">
+                <p class="item"><b>Sambhar dosa</b>&nbsp;{veg}
+                <p>
+                <p class="naan">Sambar is a South Indian mix vegetable stew that is eaten along with breakfast or meal
+                    as a side dish it is eaten with dosa </p>
+                <p class="item2">Rs 20/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw">
+                </p>
+            </div>
+            <div id="boxc" class="bo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="jeerarice.jpg" alt="" class="boim">
+                <p class="item"><b>Jeera rice</b>&nbsp;{veg}
+                <p>
+                <p class="naan">Jeera rice is an Indian dish consisting of rice and cumin seeds. It is a popular dish in
+                    North India and Pakistan as an everyday rice dish. </p>
+                <p class="item2">Rs 80/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw">
+                </p>
+            </div>
+            <div id="boxd" class="bo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="pizza.jpg" alt="" class="boim">
+                <p class="item"><b>Pizza</b>&nbsp;{veg}
+                <p>
+                <p class="naan">Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with
+                    some combination of olive oil, oregano,cheese, </p>
+                <p class="item2">Rs 60/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw">
+                </p>
+            </div>
+            <div id="boxe" class="bo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="brownie.jpg" alt="" class="boim">
+                <p class="item"><b>Brownie</b>&nbsp;{veg}
+                <p>
+                <p class="naan">A chocolate brownie is baked confection. Brownies come in a variety of form and may be
+                    fudgy or cakey, depending on their density.</p>
+                <p class="item2">Rs 40/-&nbsp;&nbsp;Discount 10%&nbsp;<input type="button" value="Add+" class="subw">
+                </p><br><br><br>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- .................................webpage 4 review body .................> -->
+
+        name="review"></a><a name="review"></a>
+            <!-- <header id="header4"><b><a name="review"></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                </b></header><br><br><br> -->
+                <div id="we4">
+            <div id="b4a">Thanks so much for being our valued customer! We’d love it if you could tell us about your
+                experience with [business name , many have given their you can alos read them .
+
+            </div><br>
+
+            <div id="b4b"><h1 class="tit4">REVIEWS</h1>
+                <div class="prof"><img src="w2.png" alt="" class="profimg"></div><div class="plus"><b>HINA KHAN </b><br>consectetur adipisicing elit. Modi possimus cupiditate, ab fugiat quis eius. Libero perspiciatis harum, cumque sunt temporibus facilis magni porro, magnam sint culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamus placeat illum tempora. Dolorem quos debitis velit nobis modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, facilis. beatae?</div><br>
+            <div class="prof"> <img src="m1.png" alt="" class="profimg"> </div><div class="plus"><b>HINA KHAN </b><br>consectetur adipisicing elit. Modi possimus cupiditate, ab fugiat quis eius. Libero perspiciatis harum, cumque sunt temporibus facilis magni porro, magnam sint culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamus placeat illum tempora. Dolorem quos debitis velit nobis modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, facilis. beatae?</div><br>
+            <div class="prof"><img src="w1.png" alt="" class="profimg"></div><div class="plus"><b>HINA KHAN </b><br>consectetur adipisicing elit. Modi possimus cupiditate, ab fugiat quis eius. Libero perspiciatis harum, cumque sunt temporibus facilis magni porro, magnam sint culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamus placeat illum tempora. Dolorem quos debitis velit nobis modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, facilis. beatae?</div><br>
+            <div class="prof"><img src="m2.png" alt="" class="profimg"></div><div class="plus"><b>HINA KHAN </b><br>consectetur adipisicing elit. Modi possimus cupiditate, ab fugiat quis eius. Libero perspiciatis harum, cumque sunt temporibus facilis magni porro, magnam sint culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamus placeat illum tempora. Dolorem quos debitis velit nobis modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, facilis.. beatae?</div><br>
+         </div>
+            <div id="b4c"><h1 class="tit4">SHARE YOUR REVIEWS</h1><h1>Please fill this form </h1>
+                <form action="backend.php">
+                    <div class="f4">
+                        <label for="doseno">Name :  </label>
+                        <input type="text" id="doseno" name="mydoseno" class="f5">
+                
+                    </div>
+                    <br>
+                    <div class="f4">
+                        email : <input type="email" name="myemail" class="f5" >
+                    </div>
+                    <br>
+                <div class="f4">
+                    addr.  : <input type="text" name="myfatname" class="f5" >
+                </div>
+                <br>
+                
+                <!-- <div class="f4">
+                    date  of birth  : <input type="date" name="mydob" >
+                </div>
+                <br> -->
+                
+                <!-- <div class="f4">
+                    <label for="date">today's date </label>
+                   <input type="date" name="today date" id="date">
+                </div>
+                <br> -->
+                <!-- <div class="f4">
+                    <label for="eli">I am eligible</label>
+                  <input type="checkbox" name="eleigibility" id="eli" checked>
+                </div>
+                <br> -->
+                <!-- <div class="f4">
+                    <label for="gender">gender</label>
+                    male<input type="radio" name="gender" id="gender"> female<input type="radio" name="gender" id="gender"> other<input type="radio" name="gender" id="gender">
+                </div>
+                <br> -->
+                <!-- <div class="f4">
+                    Name : <input type="text" name="myname" >
+                </div>
+                <br> -->
+                <label for="desease" class="f4">Give your review : </label>
+                <br>
+                <textarea name="write" id="desease"
+                 cols="30" rows="10" class="f5"></textarea>
+                <div class="f4">
+                    <br>
+                    <label for="like">Give stars</label>
+                <select name="mylike" id="like">
+                    <option value="five star" >five star</option>
+                    <option value="four star">four star </option>
+                    <option value="three star">three star </option>
+                </select>
+                </div>
+                <br>
+                <div class="f4">
+                    <input type="button" value="submit" class="f5">
+                    <input type="button" value="reset" class="f5">
+                </div>
+                <br>
+            
+                </form>
+                <h2>DISCLAIMER : once you submitted ,the submitted response will be  sent to your email addresadipisicing elit. Modi possimus cupiditate, ab fugiat quis eius. Libero perspiciatis harum, cumque sunt temporibus facilis magni porro, magnam sint culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamusadipisicing elit. Modi possimus cupiditate, ab fugiat quis eius. Libero perspiciatis harum, cumque sunt temporibus facilis magni porro, magnam sint culpa Lorem ipsum dolor  </h2>
+<!-- .................footer........... -->
+
+                <a name="footer"></a>
+
+                </div><br><div class="fobox"><p class="con">FOOTER></p><p class="con">lets connect with us :</p>
+                <div class="sm"><button class="btnn"><a href="http://google.com" target="_blank"><img src="fbn.png" alt="" class="smi"></a></button></div>
+                <div class="sm"><button class="btnn"><a href="http://google.com" target="_blank"><img src="wan.png" alt="" class="smi"></a></button></div>
+                <div class="sm"><button class="btnn"><a href="http://google.com" target="_blank"><img src="mailn.png" alt="" class="smi"></a></button></div>
+                <div class="sm"><button class="btnn"><a href="http://google.com" target="_blank"><img src="termsn.png" alt="" class="smi"></a></button></div>
+                <div class="sm"><button class="btnn"><a href="#xyz" ><img src="arron.png" alt="" class="smi"></a></button></div></div>
+
+                
+
+        </div>
+
+
+    
+
+
+
+
+
+
+
+
+</body>
+
+</html>
